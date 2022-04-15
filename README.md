@@ -45,3 +45,7 @@ The refactored version of the code, however, produced its results in a much shor
 [In a summary statement, address the following questions:]
 1. What are the advantages or disadvantages of refactoring code?
 2. How do these pros and cons apply to refactoring the original VBA script?
+
+Refactoring code can be a difficult process. It takes time and effort. If done well, however, it can produce code that runs better and faster, and is easier to read and to maintain.
+
+We see these outcomes in this very exercise, most notably in the main-action loops: the refactored, single-pass loop (with if-then conditional checks inside) is much easier to understand than the nested `for` loop that appears in the original, and the refactored code also finishes in about a third the time of the original version.

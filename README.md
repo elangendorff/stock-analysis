@@ -17,7 +17,7 @@ The code was rewritten (in Module2 of the Visual Basic Editor) so that the stock
 
 ![ticker statistics arrays](./resources/VBA_Challenge_array_creation.png)
 
-In addition, the main action of the statistics' compilation was altered so that all stocks' statistics could be compiled in a single pass[^1]. Rather than scan the enire data set for each ticker—as the original attempt did—the refactored version instead stores each statistic's data in an array cell whose index corresponds to the stock in question. When the system begins to encounter transactions for a new ticker, it simply changes the index it uses.
+In addition, the main action of the statistics' compilation was altered so that all stocks' statistics could be compiled in a single pass[^1]. Rather than scan the entire data set for each ticker—as the original attempt did—the refactored version instead stores each statistic's data in an array cell whose index corresponds to the stock in question. When the system begins to encounter transactions for a new ticker, it simply changes the index it uses.
 
 ![Refactored attempt main-action loop](./resources/VBA_Challenge_main-action_loop.png)
 
@@ -42,10 +42,10 @@ The refactored version of the code, however, produced its results in a much shor
 | **Refactored** | ![2017 refactored](./resources/VBA_Challenge_2017_timer.png) | ![2018 refactored](./resources/VBA_Challenge_2018_timer.png) |
 
 ## Summary
-[In a summary statement, address the following questions:]
-1. What are the advantages or disadvantages of refactoring code?
-2. How do these pros and cons apply to refactoring the original VBA script?
-
 Refactoring code can be a difficult process. It takes time and effort. If done well, however, it can produce code that runs better and faster, and is easier to read and to maintain.
 
-We see these outcomes in this very exercise, most notably in the main-action loops: the refactored, single-pass loop (with if-then conditional checks inside) is much easier to understand than the nested `for` loop that appears in the original, and the refactored code also finishes in about a third the time of the original version.
+We see these outcomes in this very exercise, most notably in the main-action loops: the refactored, single-pass loop (with `if-then` conditional checks inside) is much easier to understand than the nested `for` loop that appears in the original, and the refactored code also finishes in about a third the time of the original version.
+
+We could even simplify the process, further: since the last two conditionals in the refactored main-action loop have the same condition ("Is the current row the last one for this ticker?"), their instructions could also be combined into the same `if-then` body, which would simplify and speed up the code even further. (Although with a change that simple, it will likely have very little noticeable effect unless the data set used becomes _extremely_ large.)
+
+Whether or not making this change is worth the time and effort is, in the end, a judgment call that will be based on each user's, programmer's, or organization's particular needs and available resources.

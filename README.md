@@ -30,16 +30,16 @@ Both versions of the code produced the same output[^2] (as desired), as seen in 
 
 [^2]: The original attempt formatted the output slightly differently (found [here](./resources/green_stocks_2017.png) and [here](./resources/green_stocks_2018.png)). Importantly, though, the actual data—the contents of the table—is the same between both versions.
 
-| 2017 | 2018 |
+| **2017** | **2018** |
 | --- | --- |
 | ![2017 stock output](./resources/VBA_Challenge_2017.png) | ![2017 stock output](./resources/VBA_Challenge_2018.png) |
 
 The refactored version of the code, however, produced its results in a much shorter time than the original version did. The original code required .56 and .59 seconds, respectively, to produce the 2017 and 2018 data, whereas the refactored code required only .19 seconds, each.
 
-| | 2017 | 2018 |
+| | **2017** | **2018** |
 | --- | --- | --- |
-| Original | ![2017 original attempt](./resources/green_stocks_2017_timer.png) | ![2018 original attempt](./resources/green_stocks_2018_timer.png) |
-| Refactored | ![2017 refactored](./resources/VBA_Challenge_2017_timer.png) | ![2018 refactored](./resources/VBA_Challenge_2018_timer.png) |
+| **Original** | ![2017 original attempt](./resources/green_stocks_2017_timer.png) | ![2018 original attempt](./resources/green_stocks_2018_timer.png) |
+| **Refactored** | ![2017 refactored](./resources/VBA_Challenge_2017_timer.png) | ![2018 refactored](./resources/VBA_Challenge_2018_timer.png) |
 
 ## Summary
 [In a summary statement, address the following questions:]

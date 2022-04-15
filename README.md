@@ -1,5 +1,4 @@
-# stock-analysis
-Module 2: VBA of Wall Street
+# Stock Analysis
 
 ## Overview of Project
 [Explain the purpose of this analysis.]

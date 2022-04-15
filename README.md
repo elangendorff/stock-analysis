@@ -28,7 +28,7 @@ After the statistical compilation pass completes and statistics have been compil
 ## Results
 Both versions of the code produced the same output[^2] (as desired), as seen in the following screenshots:
 
-[^2]: The original attempt formatted the output slightly differently (found [here](./resources/green_stocks_2017.png) and [here](./resources/green_stocks_2018.png)). Importantly, though, the actual data—the contents of the table—is the same between both versions.
+[^2]: The original attempt used lower-case column headers (as seen [here](./resources/green_stocks_2017.png) and [here](./resources/green_stocks_2018.png)). Importantly, though, the actual contents of the table are the same between the two versions.
 
 | **2017** | **2018** |
 | --- | --- |

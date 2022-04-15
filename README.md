@@ -1,7 +1,7 @@
 # Stock Analysis
 
 ## Overview of Project
-[Explain the purpose of this analysis.]
+We were previously given [an Excel workbook]() containing two years of stock data for twelve specific stocks. In the worbook, we created several Visual Basic for Applications (VBA) macros to help display the data, but the code runs somewhat slowly. We want to know if the same results can be achieved in less time. So we will refactor the code in an attempt to do so.
 
 ## Results
 [Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script and the refactored script.]

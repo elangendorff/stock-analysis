@@ -1,16 +1,16 @@
 # Stock Analysis
 
 ## Overview of Project
-We were previously given an [Excel workbook](./resources/VBA_Challenge.xlsm) containing two years of stock data for twelve specific stocks. In the worbook, we created several Visual Basic for Applications (VBA) macros to help display the data, but the code runs somewhat slowly. We want to know if the same results can be achieved in less time. So we will refactor the code in an attempt to do so.
+We were given an [Excel workbook](./resources/VBA_Challenge.xlsm) containing two years of stock data for twelve specific stocks. In the workbook were several Visual Basic for Applications (VBA) macros to help display statistics about the stock data, but the code ran somewhat slowly. We want to know if we can obtain the same results, but faster. So we will refactor the code in an attempt to do so.
 
 ## The Code
 
 ### Original Attempt
 The original VBA code (found in Module1 of the Visual Basic Editor) involved making a pass through every stock transaction in the data[^1] in order to compile statistics for a given stock ticker code ("ticker"). The data was then output to an available line on the output worksheet, and the process was then repeated for each remaining ticker in the set.
 
-![Original attempt main-action loop](./resources/green_stocks_main-action_loop.png)
-
 [^1]: Note that, in order for the compiled statistics to be accurate, the stock transactions first had to be sorted by ticker, and then by date (ascending).
+
+![Original attempt main-action loop](./resources/green_stocks_main-action_loop.png)
 
 ### Refactored Attempt
 The code was rewritten (in Module2 of the Visual Basic Editor) so that the stock-ticker statistics could be held in arrays in RAM.
@@ -26,26 +26,20 @@ After the statistical compilation pass completes and statistics have been compil
 ![ticker statistics output loop](./resources/VBA_Challenge_output_loop.png)
 
 ## Results
-The time required to complete the task for years 2017 and 2018 using the original code was around .56 and .59 seconds, respectively, as seen in the following timer dialog screenshots:
+Both versions of the code produced the same output[^2] (as desired), as seen in the following screenshots:
 
-| 2017 | 2018 |
-| --- | --- |
-| ![2017 original attempt](./resources/green_stocks_2017_timer.png) | ![2018 original attempt](./resources/green_stocks_2018_timer.png) |
-
-Using the refactored code, however, the time required to complete the task for years 2017 and 2018 was around .19 seconds, each.
-
-| 2017 | 2018 |
-| --- | --- |
-| ![2017 refactored](./resources/VBA_Challenge_2017_timer.png) | ![2018 refactored](./resources/VBA_Challenge_2018_timer.png) |
-
-As desired, the output from each version is the same[^2], despite their differences in execution time.
 [^2]: The original attempt formatted the output slightly differently (found [here](./resources/green_stocks_2017.png) and [here](./resources/green_stocks_2018.png)). Importantly, though, the actual data—the contents of the table—is the same between both versions.
 
 | 2017 | 2018 |
 | --- | --- |
 | ![2017 stock output](./resources/VBA_Challenge_2017.png) | ![2017 stock output](./resources/VBA_Challenge_2018.png) |
 
+The refactored version of the code, however, produced its results in a much shorter time than the original version did. The original code required .56 and .59 seconds, respectively, to produce the 2017 and 2018 data, whereas the refactored code required only .19 seconds, each.
 
+| | 2017 | 2018 |
+| --- | --- | --- |
+| Original | ![2017 original attempt](./resources/green_stocks_2017_timer.png) | ![2018 original attempt](./resources/green_stocks_2018_timer.png) |
+| Refactored | ![2017 refactored](./resources/VBA_Challenge_2017_timer.png) | ![2018 refactored](./resources/VBA_Challenge_2018_timer.png) |
 
 ## Summary
 [In a summary statement, address the following questions:]

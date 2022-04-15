@@ -6,7 +6,7 @@ We were given an [Excel workbook](./resources/VBA_Challenge.xlsm) containing two
 ## The Code
 
 ### Original Attempt
-The original VBA code (found in Module1 of the Visual Basic Editor) involved making a pass through every stock transaction in the data[^1] in order to compile statistics for a given stock ticker code ("ticker"). The data was then output to an available line on the output worksheet, and the process was then repeated for each remaining ticker in the set.
+The original VBA code (found in Module1 of the Visual Basic Editor) involved making a pass through every stock transaction in the data[^1] in order to compile statistics for a given stock ticker code ("ticker"). The data was then output to an available line on the output worksheet, and the process was repeated for each ticker in the set.
 
 [^1]: Note that, in order for the compiled statistics to be accurate, the stock transactions first had to be sorted by ticker, and then by date (ascending).
 

@@ -1,7 +1,7 @@
 # Stock Analysis
 
 ## Overview of Project
-We were given an [Excel workbook](./resources/VBA_Challenge.xlsm) containing two years of stock data for twelve specific stocks. In the workbook were several Visual Basic for Applications (VBA) macros to help display statistics about the stock data, but the code ran somewhat slowly. We want to know if we can obtain the same results, but faster. So we will refactor the code in an attempt to do so.
+We were given an [Excel workbook](./VBA_Challenge.xlsm) containing two years of stock data for twelve specific stocks. In the workbook were several Visual Basic for Applications (VBA) macros to help display statistics about the stock data, but the code ran somewhat slowly. We want to know if we can obtain the same results, but faster. So we will refactor the code in an attempt to do so.
 
 ## The Code
 
